@@ -35,36 +35,12 @@ module.exports = function override(config, env) {
     if (env !== "development") {
         console.log("This is an AWS build");
         switch (AMPLIFY_ENV) {
-            case "clientone": localConfig = {
-                "websiteName": "Website 1",
+            case "devclient": localConfig = {
+                "websiteName": "LoyaltyOne Broker Client",
                 "colorclass": "color1",
                 "flow": "PKCE",
-                "brokerUrl": "master.dw8p5s05jola3.amplifyapp.com",
-                "clientId": "4qtiagdchisgthefmoi045kd4b"
-            };
-                break;
-            case "clientthre": localConfig = {
-                "websiteName": "Website 2",
-                "colorclass": "color2",
-                "flow": "PKCE",
-                "brokerUrl": "master.dw8p5s05jola3.amplifyapp.com",
-                "clientId": "3n4q7a6h9kq6u99614bqjmgil1"
-            };
-                break;
-            case "pprodthre": localConfig = {
-                "websiteName": "Preprod 2",
-                "colorclass": "color2",
-                "flow": "PKCE",
-                "brokerUrl": "preprod.d35dwu2at8rhkc.amplifyapp.com",
-                "clientId": "77hq5ssfckom19ss6ejadleomf"
-            };
-                break;
-            case "pprodone": localConfig = {
-                "websiteName": "Preprod 1",
-                "colorclass": "color1",
-                "flow": "PKCE",
-                "brokerUrl": "preprod.d35dwu2at8rhkc.amplifyapp.com",
-                "clientId": "25dn9bp091cjpvbk47t769rmlc"
+                "brokerUrl": "d19nm1cychg0gn.cloudfront.net",
+                "clientId": "4toirc70ki16kl5du4tfffsb48"
             };
                 break;
             default:
@@ -76,8 +52,8 @@ module.exports = function override(config, env) {
             "websiteName": "Website Local",
             "colorclass": "color1",
             "flow": "PKCE",
-            "brokerUrl": "preprod.d35dwu2at8rhkc.amplifyapp.com",
-            "clientId": "dev-a74f71067496caa729af7ffedf400504"
+            "brokerUrl": "d19nm1cychg0gn.cloudfront.net",
+            "clientId": "4toirc70ki16kl5du4tfffsb48"
         };
     }
 
